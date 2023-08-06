@@ -8,12 +8,8 @@ SQL Server - Banco de dados SQL Server para armazenar as informações climátic
 Git - Controle de versão Git para clonar o repositório do projeto.
 Instalação
 Clone o repositório do projeto ClimaAEC em sua máquina local usando o Git:
-bash
-Copy code
 git clone https://github.com/ricardosnatos1975/ClimaAEC.git
 Navegue para o diretório do projeto ClimaAEC:
-bash
-Copy code
 cd ClimaAEC
 Abra o arquivo appsettings.json na pasta ClimaAEC e configure a conexão com o banco de dados SQL Server, substituindo SUA_STRING_DE_CONEXAO pelo endereço e credenciais do seu servidor:
 json
@@ -26,16 +22,12 @@ Copy code
 }
 Abra um terminal na pasta ClimaAEC e execute o seguinte comando para criar o banco de dados:
 sql
-Copy code
 dotnet ef database update
 Isso criará o banco de dados com as tabelas necessárias para armazenar as informações climáticas.
 
 Execute o seguinte comando para restaurar as dependências do projeto:
-Copy code
 dotnet restore
 Finalmente, execute o projeto ClimaAEC com o seguinte comando:
-arduino
-Copy code
 dotnet run
 Agora, o servidor estará em execução e você poderá acessar a API pelo navegador ou por meio de ferramentas como Postman.
 
